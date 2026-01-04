@@ -66,6 +66,12 @@ app.get('/privacy', (_req, res) => {
   res.sendFile(path.join(__dirname, '../public/privacy.html'));
 });
 
+// Route pour le fichier de vérification TikTok
+app.get('/tiktok-developers-site-verification=Yqdd8DJwFhaoiUb5RlgmQOTbPbjftIjR', (_req, res) => {
+  res.type('text/plain');
+  res.send('tiktok-developers-site-verification=Yqdd8DJwFhaoiUb5RlgmQOTbPbjftIjR');
+});
+
 // Routes API
 app.use('/api/auth', authRoutes);
 
