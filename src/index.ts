@@ -66,10 +66,15 @@ app.get('/privacy', (_req, res) => {
   res.sendFile(path.join(__dirname, '../public/privacy.html'));
 });
 
-// Route pour le fichier de vérification TikTok
+// Routes pour les fichiers de vérification TikTok
 app.get('/tiktok-developers-site-verification=Yqdd8DJwFhaoiUb5RlgmQOTbPbjftIjR', (_req, res) => {
   res.type('text/plain');
   res.send('tiktok-developers-site-verification=Yqdd8DJwFhaoiUb5RlgmQOTbPbjftIjR');
+});
+
+app.get('/tiktok-developers-site-verification=tzjnlbLprcm7dgvp053Oz4KfGAdLaT0o', (_req, res) => {
+  res.type('text/plain');
+  res.send('tiktok-developers-site-verification=tzjnlbLprcm7dgvp053Oz4KfGAdLaT0o');
 });
 
 // Routes API
