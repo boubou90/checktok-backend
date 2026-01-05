@@ -77,6 +77,11 @@ app.get('/tiktok-developers-site-verification=tzjnlbLprcm7dgvp053Oz4KfGAdLaT0o',
   res.send('tiktok-developers-site-verification=tzjnlbLprcm7dgvp053Oz4KfGAdLaT0o');
 });
 
+app.get('/tiktok-developers-site-verification=iKqyMokUZ8TTVTG2JBOLQz5ZRk5XFSI2', (_req, res) => {
+  res.type('text/plain');
+  res.send('tiktok-developers-site-verification=iKqyMokUZ8TTVTG2JBOLQz5ZRk5XFSI2');
+});
+
 // Routes API
 app.use('/api/auth', authRoutes);
 
